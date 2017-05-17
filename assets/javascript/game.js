@@ -1,5 +1,8 @@
 // on click event to get started
-	document.addEventlistener('keydown', function();
+function myFunction() {
+    var x = document.getElementById("hangWord").value;
+    document.getElementById("demo").innerHTML = x;
+}
 // set up the h3 "winning word header"
 		var words = getElementById("words");
 		words = ["eartha kitt", "mae west", "divine", "pam grier", "tura satana"]
@@ -24,11 +27,12 @@
 	// make a section that counts the current word
 		var guesses = getElementById("guesses"); 
 	// # of guesses the user has left
-	
+
 	// if user guesses correctly then number stays the same
 	// if user guesses incorrectly take -1 off of guesses
 	// 
 	// letters that have already been guessed
 		var deadLetters = getElementById("deadLetters");
+		
 	// if user guesses a wrong letter add it here, if user guesses the right letter
 	// add it here.
