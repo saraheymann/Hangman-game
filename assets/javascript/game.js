@@ -17,7 +17,7 @@ function pickWord() {
 }
 
 // returns the word using dashes
-function hideWord(wordString) {
+function hideWord() {
     wordArray = word.split('');
     for (var i = 0; i < wordArray.length; i++) {
         hiddenWord += '-';
@@ -32,7 +32,7 @@ function showWord() {
 }
 
 //Returns boolean if userGuess is wrong
-function guessMatchesChar(charOfWord) {
+function guessMatches(charOfWord) {
     return userGuess === charOfWord;
 }
 
@@ -57,7 +57,7 @@ function addUsedLetter(userGuess) {
 //starts with and returns string but modifies array of string letters
 function guessLetter() {
     for (var i = 0; i < hiddenWordArray.length; i++) {
-        if (guessMatchesChar(wordArray[i])) {
+        if (guessMatches(wordArray[i])) {
             hiddenWordArray[i] = userGuess;
             addUsedLetter(userGuess);
         } else {
@@ -200,16 +200,16 @@ function showLoss() {
     winningWordDOM('<h4>The femme was ' + word + '. Press \'n\' for the next word.</h4>');
 }
 function changeImg(winPic){
-	if(showWord === femmes[0]){
-		imgDOM('<img src=assets/images/earthaPic.jpeg');
-	}else if(showWord === femmes[1]){
-		imgDOM('<img src=assets/images/maePic.jpeg');
-	}else if(showWord === femmes[2]){
-		imgDOM('<img src=assets/images/divinePic.jpeg');
-	}else if(showWord === femmes[3]){
-		imgDOM('<img src=assets/images/pamPic.jpg');
-	}else if(showWord === femmes[4]){
-		imgDOM('<img src=assets/images/turaPic.jpg');
+	if(word === femmes[0]){
+		imgDOM('<img src=assets/images/earthaPic.jpeg>');
+	}else if(word === femmes[1]){
+		imgDOM('<img src=assets/images/maePic.jpeg>');
+	}else if(word === femmes[2]){
+		imgDOM('<img src=assets/images/divinePic.jpg>');
+	}else if(word === femmes[3]){
+		imgDOM('<img src=assets/images/pamPic.jpg>');
+	}else if(word === femmes[4]){
+		imgDOM('<img src=assets/images/turaPic.jpg>');
 	}
 }
 
