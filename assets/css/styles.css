@@ -1,12 +1,23 @@
 body{
 	background-color: pink;
-	background-image: url();
+	background-image: url('http://rs257.pbsrc.com/albums/hh234/tfm448/0029101.gif~c200');
 }
 .header{
-	font-family: 'Pacifico', cursive;
+	font-family: 'Spicy Rice', cursive !important;
+	color: white;
 	letter-spacing: 2px;
-	padding-left: 50px;
 	text-align: center;
+	background-color: lightgrey;
+	opacity: .8;
+}
+.jumbotron{
+	background-image: url(http://retrovectors.com/wp-content/uploads/2013/02/pulp-cover-586x198.jpg);
+	background-size: 100%;
+	border-bottom: outset darkgrey;
+}
+#game{
+	margin-top: 0px; 
+	margin-left: 100px;
 }
 h4{
 	color: #629632;

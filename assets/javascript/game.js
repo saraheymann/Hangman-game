@@ -160,6 +160,7 @@ function captionsDOM(captionString){
 function imgDOM(imgUrl){
     document.getElementById('ff-img').innerHTML = imgUrl;
 }
+// changes the dom to change the sound
 
 //displays the start screen
 function gameStart() {
@@ -199,6 +200,7 @@ function showLoss() {
     numLossesDOM();
     winningWordDOM('<h4>The femme was ' + word + '. Press \'n\' for the next word.</h4>');
 }
+// changes image when user wins
 function changeImg(winPic){
 	if(word === femmes[0]){
 		imgDOM('<img src=assets/images/earthaPic.jpeg>');
@@ -212,6 +214,7 @@ function changeImg(winPic){
 		imgDOM('<img src=assets/images/turaPic.jpg>');
 	}
 }
+
 
 //DOM methods
 //User presses a key
